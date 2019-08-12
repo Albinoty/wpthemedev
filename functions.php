@@ -75,5 +75,5 @@
 
     // Ajout d'un écouteur d'événement pour activer les images mise en avant pour les post (article)
     add_action('init', 'ajouter_image_article');
-
+    
 ?>
