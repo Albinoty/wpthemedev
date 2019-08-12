@@ -18,19 +18,19 @@
             <div id="qenderSlide" class="col-sm-6 carousel slide d-flex align-items-center" data-ride="carousel" data-interval="0">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="http://localhost:8080/wp-content/themes/albi/images/city/qender1.png" class="d-block w-100" alt="qender1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/city/qender1.png" class="d-block w-100" alt="qender1">
                             <div class="intro carousel-caption d-non d-md-block">
                                 <p>1</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="http://localhost:8080/wp-content/themes/albi/images/city/shkodra.png" class="d-block w-100" alt="shkodra">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/city/shkodra.png" class="d-block w-100" alt="shkodra">
                             <div class="intro carousel-caption d-non d-md-block">
                                 <p>2</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="http://localhost:8080/wp-content/themes/albi/images/city/prishtine.png" class="d-block w-100" alt="prishtine">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/city/prishtine.png" class="d-block w-100" alt="prishtine">
                             <div class="intro carousel-caption d-none d-md-block">
                                 <p>3</p>
                             </div>

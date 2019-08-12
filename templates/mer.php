@@ -19,19 +19,19 @@
                     <div id="detiSlide" class="carousel slide" data-ride="carousel" data-interval="0">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="http://localhost:8080/wp-content/themes/albi/images/city/ksamil.jpg" class="d-block w-100" alt="ksamil">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/city/ksamil.jpg" class="d-block w-100" alt="ksamil">
                                 <div class="intro carousel-caption d-none d-md-block">
                                     <p>1</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="http://localhost:8080/wp-content/themes/albi/images/city/durres.png" class="d-block w-100" alt="durres">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/city/durres.png" class="d-block w-100" alt="durres">
                                 <div class="intro carousel-caption d-none d-md-block">
                                     <p>2</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="http://localhost:8080/wp-content/themes/albi/images/city/vlore.png" class="d-block w-100" alt="vlore">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/city/vlore.png" class="d-block w-100" alt="vlore">
                                 <div class="intro carousel-caption d-none d-md-block">
                                     <p>3</p>
                                 </div>
