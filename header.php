@@ -18,10 +18,10 @@
         <div class="collapse navbar-collapse" id="barNavigation">
             <ul class="navbar-nav p-2">
                 <li class="nav-item active">
-                    <a class="nav-link rediriction" href="index.html"><h1>Accueil</h1></a>
+                    <a class="nav-link rediriction" href="http://localhost:8080/wp-content/themes/albi/index.html"><h1>Accueil</h1></a>
                 </li>
                 <li class="nav-item">
-                        <a class="nav-link rediriction" href="info/contact.html"><h1>Contact</h1></a>
+                        <a class="nav-link rediriction" href="http://localhost:8080/wp-content/themes/albi/info/contact.html"><h1>Contact</h1></a>
                 </li>
             </ul>
         </div>
