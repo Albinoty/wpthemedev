@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Bienvenue dans notre site. Nous allons vous presenter la culture albanaise &agrave; travers nos slides. Pour toute information, veuillez vous redirigez dans l'onglet Contact">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
     <title>Accueil</title>
+    <?php
+        // Ajout des css de manière dynamique grâce à functions.php
+        // Link de la doc https://developer.wordpress.org/reference/functions/wp_head/
+        wp_head();
+    ?>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
