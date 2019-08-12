@@ -1,9 +1,11 @@
     <div class="card-footer text-center">Albinot Fetahi &copy;</div>
 
-    <!-- Bootstrap script -->
-    <!-- Jquery -->
-    <script src="<?php echo get_template_directory_uri(); ?>/node_modules/jquery/dist/jquery.js"></script>
-    <!-- Bootstrap Script -->
-    <script src="<?php echo get_template_directory_uri(); ?>/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <?php 
+        // Ajout de la fonction wp_footer() qui va placer les scripts js qui doivent se trouver avant la fermeture de la balise body
+        // Link de la doc https://developer.wordpress.org/reference/functions/wp_footer/
+        wp_footer();
+    ?>
+
 </body>
 </html>
