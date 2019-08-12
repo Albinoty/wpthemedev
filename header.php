@@ -30,5 +30,13 @@
                         <a class="nav-link rediriction" href="<?php echo get_template_directory_uri(); ?>/info/contact.html"><h1>Contact</h1></a>
                 </li>
             </ul>
+            <?php
+                wp_nav_menu([
+                    // 'menu' => 'main-menu',
+                    'menu_class' => 'navbar-nav',
+                    'theme_location' => 'main-menu',
+                    'container' => ''
+                ]);
+            ?>
         </div>
     </nav>

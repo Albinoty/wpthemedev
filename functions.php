@@ -24,4 +24,20 @@
     // Link vers la doc https://developer.wordpress.org/reference/hooks/wp_enqueue_scripts/
 
     add_action('wp_enqueue_scripts', 'ajout_css_js');
+
+    /*
+    * Fonction qui va ajouter un menu au thème.
+    *   
+    * @return void
+    *
+    */
+
+    function register_main_menu(){
+        register_nav_menu('main-menu', 'Menu principal dans le header');
+
+    }
+
+    add_action('after_setup_theme', 'register_main_menu');
+
+
 ?>
