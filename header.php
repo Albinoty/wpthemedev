@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse" id="barNavigation">
             <ul class="navbar-nav p-2">
                 <li class="nav-item active">
-                    <a class="nav-link rediriction" href="<?php echo get_template_directory_uri(); ?>/index.html"><h1>Accueil</h1></a>
+                    <a class="nav-link rediriction" href="<?php echo get_template_directory_uri(); ?>/index.html"><h1><?php echo get_bloginfo('name'); ?></h1></a>
                 </li>
                 <li class="nav-item">
                         <a class="nav-link rediriction" href="<?php echo get_template_directory_uri(); ?>/info/contact.html"><h1>Contact</h1></a>
