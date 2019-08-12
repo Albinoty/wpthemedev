@@ -1,6 +1,6 @@
 <?php
 
-    /*
+    /**
     *   Fonction qui va ajouter des scripts dynamiquement afin que l'on puisse les inclures dans le thème avec wp_head() et wp_footer()
     *   @return void
     */
@@ -25,7 +25,7 @@
 
     add_action('wp_enqueue_scripts', 'ajout_css_js');
 
-    /*
+    /**
     * Fonction qui va ajouter un menu au thème.
     *   
     * @return void
@@ -39,7 +39,7 @@
 
     add_action('after_setup_theme', 'register_main_menu');
 
-    /*
+    /**
     *
     * Fonction qui ajoute des attributs au balise <a> des nav_menu
     *
@@ -60,5 +60,20 @@
     // les add_action et add_filter peuvent avoit jusqu'à 4 paramêtre. Le 3ème pour l'ordre d'execution et le 4 ème pour le nombre de parammètre qui seront passer à la fonction callback
 
     add_filter('nav_menu_link_attributes','ajout_menu_a_class',10,3);
+    /**
+     * Ajout la fonctionnalité d'un ajout d'image pour les posts pour ce thème ci
+     *
+     * @return void
+     */
+
+
+    function ajout_image_article(){
+        //Ajout de la fonctionalité d'ajout d'image pour les posts pour ce theme ci
+        add_theme_support('post-thumbnails');
+        $test = 0;
+    }
+
+    // Ajout d'un écouteur d'événement pour activer les images mise en avant pour les post (article)
+    add_action('init', 'ajouter_image_article');
 
 ?>
