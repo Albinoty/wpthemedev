@@ -1,29 +1,11 @@
 <?php
 
-    /**
-    *   Fonction qui va ajouter des scripts dynamiquement afin que l'on puisse les inclures dans le thème avec wp_head() et wp_footer()
-    *   @return void
-    */
-    function ajout_css_js(){
-        // Ajout des scripts css
-        // Link vers la doc https://developer.wordpress.org/reference/functions/wp_enqueue_style/
+    // Pour ne pas avoir de fichier contenant trop de ligne de code nous allons repartir le tout dans des fichiers spécifiques afin de rendre le tout plus lisible.
+    // Nous découvrons ici la function require_once() de php qui nous permet d'importer des fichiers
 
-        wp_enqueue_style('bootstrap', get_template_directory_uri().'/node_modules/bootstrap/dist/css/bootstrap.css');
-        wp_enqueue_style('main', get_template_directory_uri().'/css/style.css');
+    // Nous découvrons également la fonction get_template_directory() qui renvoi le chemin du dossier du thème actif (à ne pas confondre avec get_template_directory_uri() qui renvoi une url)
+    require_once(get_template_directory() . '/includes/enqueue-script.php');
 
-
-    
-        // Jquery
-        wp_enqueue_script('jquery',get_template_directory_uri().'/node_modules/jquery/dist/jquery.js', null, true);
-        // Bootstrap Script
-        wp_enqueue_script('bootstrap',get_template_directory_uri().'/node_modules/bootstrap/dist/js/bootstrap.js', null, true);
-        
-    }
-    // Nous ajoutons un écouteur d'événements pour nous prévenir lorsque l'on peut ajouter des css et scripts.
-    // Cette écouteur va déclancher la fonction ajout_css_js()
-    // Link vers la doc https://developer.wordpress.org/reference/hooks/wp_enqueue_scripts/
-
-    add_action('wp_enqueue_scripts', 'ajout_css_js');
 
     /**
     * Fonction qui va ajouter un menu au thème.
