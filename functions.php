@@ -4,10 +4,14 @@
     // Nous découvrons ici la function require_once() de php qui nous permet d'importer des fichiers
 
     // Nous découvrons également la fonction get_template_directory() qui renvoi le chemin du dossier du thème actif (à ne pas confondre avec get_template_directory_uri() qui renvoi une url)
-    require_once(get_template_directory() . '/includes/enqueue-script.php');
+    
+    // Nous utilisons la fonction define() de php pour nous facilité l'écriture et pouvoir utiliser une constante gloabal
 
+    define('INCLUDE_DIR', get_template_directory().'/includes');
 
-    require_once(get_template_directory(). '/includes/menu.php');
+    require_once(INCLUDE_DIR . '/enqueue-script.php');
+
+    require_once(INCLUDE_DIR . '/menu.php');
 
     /**
     *
