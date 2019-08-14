@@ -15,6 +15,7 @@
 
             wp_enqueue_style('bootstrap', get_template_directory_uri().'/node_modules/bootstrap/dist/css/bootstrap.css');
             wp_enqueue_style('main', get_template_directory_uri().'/css/style.css');
+            wp_enqueue_style('albi-theme',get_template_directory_uri().'/css/albi-theme.css');
 
             // Jquery
             wp_enqueue_script('jquery',get_template_directory_uri().'/node_modules/jquery/dist/jquery.js', null, true);
