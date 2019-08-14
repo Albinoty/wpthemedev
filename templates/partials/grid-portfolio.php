@@ -4,7 +4,8 @@
             // Pour cela nous allons utiliser la class WP_Querry
             // https://developer.wordpress.org/reference/classes/wp_query/
             $args = [
-                'post_type' => 'post'
+                'post_type' => 'post',
+                'category_name' => 'portfolio'
             ];
             $query = new WP_Querry($args);
             while ($query->have_posts()): $query->the_post();
